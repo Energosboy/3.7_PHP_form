@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма для отзыва о товаре</title>
+</head>
+<body>
+  <h1>Форма для отзыва о товаре</h1>
+  <form action="process.php" method="POST">
+    <label for="name">Ваше имя:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="review">Отзыв:</label>
+    <textarea name="review" id="review" required></textarea>
+    <label for="rating">Рейтинг (1-5):</label>
+    <input type="number" name="rating" id="rating" min="1" max="5" required>
+    <input type="submit" value="Отправить отзыв">
+  </form>
+</body>
+
+<head>
+  <title>Форма для отмены заказа</title>
+</head>
+<body>
+  <h1>Форма для отмены заказа</h1>
+  <form action="process_cancel.php" method="POST">
+    <label for="order_id">Номер заказа:</label>
+    <input type="text" name="order_id" id="order_id" required>
+    <label for="reason">Причина отмены:</label>
+    <textarea name="reason" id="reason" required></textarea>
+    <input type="submit" value="Отменить заказ">
+  </form>
+</body>
+
+<head>
+  <title>Форма для добавления отзыва</title>
+</head>
+<body>
+  <h1>Форма для добавления отзыва</h1>
+  <form action="process_review.php" method="POST">
+    <label for="name">Имя:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="review">Отзыв:</label>
+    <textarea name="review" id="review" required></textarea>
+    <label for="rating">Рейтинг (1-5):</label>
+    <input type="number" name="rating" id="rating" min="1" max="5" required>
+    <input type="submit" value="Добавить отзыв">
+  </form>
+</body>
+</html>
